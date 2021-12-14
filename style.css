@@ -1,23 +1,26 @@
 :root {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(226, 186, 236);
+    color: rgb(172, 75, 175);
     margin: 20px;
 }
 body {
     display: block;
     background-image: linear-gradient(90deg,black, rgb(156, 16, 6), rgb(95, 10, 95),black);
 }
+hr {
+    margin: 100px 0px 20px 0px;
+}
+#top-hr {
+    margin: 10px 0px 50px 0px;
+}
 .name   {
     font-size: 50px;
     font-weight: bolder;
+    float: left;
 }
 header {
     display: inline;
     margin: 0px 5px 15px 5px;
-}
-.name {
-    
-    float: left;
 }
 nav {
     font-size: x-large;
@@ -26,8 +29,8 @@ nav {
     
 }
 nav a {
-    margin: 5px;
-    color: whitesmoke;
+    margin: 20px 20px 0px 0px;
+    color: rgb(205, 100, 219);
 }
 main {
     display: block;
@@ -37,26 +40,53 @@ main {
 section {
     margin: 5px;
 }
+.box {
+    display: inline-block;
+    border: solid rgb(218, 87, 223) 2.5px;
+    padding: 10px;
+}
 .photo {
-    width: 300px;
+    border: rgb(228, 97, 184) double 7px;
+    width: 400px;
     margin: 10px 5px;
 }
+/* img :hover {
+    border: yellowgreen;
+} */
 .about-me {
     margin: 10px;
+}
+article {
+    line-height: 25px;
+    margin-top: 10px;
 }
 .contact {
     margin: 50px 10px;
 }
 p {
-    margin: 5px;
+    margin: 20px 5px;
 }
 h1 {
-    margin: 5px;
+    margin: 15px 5px;
 }
-@media screen and (Max-width: 1100) {
-
+.ending {
+    margin: 0px 10px 50px 10px;
+    padding: 20px 0px 40px 0px;
 }
 
-@media screen and (Max-width: 450) {
+@media screen and (Max-width: 1100px) {
+    body { background-image: linear-gradient(90deg,black,  rgb(95, 10, 95), rgb(156, 16, 6));}
+}
 
+@media screen and (Max-width: 655px) {
+    .name {text-align: center; float: none;} 
+    nav {float: none; text-align: center;}
+    body {background-image: linear-gradient(45deg, rgb(180, 50, 41), rgb(70, 16, 70));}
+    .about-me { display: block;}
+    .photo { width: 250px;}
+    #top-hr {display: none;}
+    .home {margin-top: 20px;}
+    nav a {margin-bottom: 20px;}
+    hr { margin: 50px 0px 20px 0px;}
+    
 }
