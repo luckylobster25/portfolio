@@ -2,6 +2,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(172, 75, 175);
     margin: 20px;
+    font-size: 20px;
 }
 body {
     display: block;
@@ -45,10 +46,12 @@ section {
     border: solid rgb(218, 87, 223) 2.5px;
     padding: 10px;
 }
+
 .photo {
     border: rgb(228, 97, 184) double 7px;
     width: 400px;
     margin: 10px 5px;
+    box-shadow: rgb(116, 24, 78) 10px 10px 10px;
 }
 /* img :hover {
     border: yellowgreen;
@@ -73,9 +76,26 @@ h1 {
     margin: -50px 10px 0px 10px;
     padding: 20px 0px 40px 0px;
 }
+#codejavascript {
+    width: 800px;
+    border: solid 4px purple;
+    margin-top: 20px;
+    box-shadow: rgb(116, 24, 78) 10px 10px 10px;
+}
+#finish-bar {
+    color: whitesmoke;
+    background: rgb(141, 56, 141);
+    padding: 20px;
+    font-size: 45px;
+}
 
 @media screen and (Max-width: 1100px) {
     body { background-image: linear-gradient(90deg,black,  rgb(95, 10, 95), rgb(156, 16, 6));}
+    #codejavascript {
+        width: 600px;
+    }
+    #finish-bar { font-size: 35px;}
+    :root {font-size: 17.5px;}
 }
 
 @media screen and (Max-width: 655px) {
@@ -88,5 +108,8 @@ h1 {
     .home {margin-top: 20px;}
     nav a {margin-bottom: 20px;}
     hr { margin: 50px 0px 20px 0px;}
-    
+    #codejavascript {width: 400px;}
+    * {color: whitesmoke;}
+    #finish-bar { font-size: 25px;}
+    :root {font-size: 15px;}
 }
